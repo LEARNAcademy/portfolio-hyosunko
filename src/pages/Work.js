@@ -13,20 +13,20 @@ class Work extends Component {
   constructor(props) {
     super(props)
     this.state = {
-        portfolios: portfolios
+        portfoliosLocal: portfolios
     }
   }
   render() {
-    const { portfolios } = this.state
+    const { portfoliosLocal } = this.state
 
     return(
       <Router>
-        <div>
+        <div class="portfolio">
             <nav>
                 <h2> Portfolios </h2>
-                  <ul>
-                    {portfolios.map((portfolio)=>
-                      <li>
+                  <ul class="portfolio-list">
+                    {portfoliosLocal.map((portfolio)=>
+                      <li class="portfolio-item">
                         <Link to={`/portfolio/${portfolio.id}`}>
                           {portfolio.title}<br/>
                         </Link>

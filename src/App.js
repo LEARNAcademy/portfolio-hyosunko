@@ -49,19 +49,19 @@ class App extends Component {
             <Navbar.Toggle />
             <Navbar.Collapse >
               <Nav>
-                <NavItem>
+                <NavItem style={{marginLeft: '5%'}}>
                   <Link to="/">Home </Link>
                 </NavItem>
-                <NavItem>
+                <NavItem style={{marginLeft: '5%'}}>
                   <Link to="/about">About </Link>
                 </NavItem>
-                <NavItem>
+                <NavItem style={{marginLeft: '5%'}}>
                   <Link to="/skills">Skills </Link>
                 </NavItem>
-                <NavItem>
-                  <Link to="/work">Work </Link>
+                <NavItem style={{marginLeft: '5%'}}>
+                  <Link to="/work">Portfolios </Link>
                 </NavItem>
-                <NavItem>
+                <NavItem style={{marginLeft: '5%'}}>
                   <Link to="/contacts">Contacts</Link>
                 </NavItem>
               </Nav>
@@ -73,7 +73,7 @@ class App extends Component {
             <Route path="/skills" component={Skills} />
             <Route path="/work" component={Work} />
             <Route path="/contacts" component={Contacts} />
-            <Route component={PageNotFound} />
+            <Route component={Home} />
           </Switch>
         </div>
       </Router>

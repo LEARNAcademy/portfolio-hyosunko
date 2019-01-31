@@ -5,7 +5,17 @@ class Skills extends Component {
   render() {
 
     return(
-      <h1>Skills</h1>
+        <div class="skills">
+            <h1>My Skill Sets </h1>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>React</li>
+                <li>React Router</li>
+                <li>JSON</li>
+            </ul>
+            
+        </div>
     )
   }
 }

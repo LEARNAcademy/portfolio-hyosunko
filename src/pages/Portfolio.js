@@ -20,14 +20,19 @@ class Portfolio extends Component {
     }
 
     render(){
-        const{ portfolioId } = this.state
-        const portfolio = portfolios.find((portfolio)=>portfolio.id == portfolioId)
 
+        
+        
+        const{ portfolioId } = this.state
+        console.log("portfolio.id", portfolios)
+        console.log("portfolioUd", portfolioId)
+        const portfolio = portfolios.find((portfolio)=>portfolio.id == portfolioId)
+        
         return(
-            <div>
-                <h1>{portfolio.title}</h1>
-                <p>{portfolio.url}</p>
-                <p>{portfolio.description}</p>
+            <div class="project">
+                <h2 class="project-tltle">{portfolio.title}</h2>
+                <p class="project-desc">{portfolio.description}</p>
+                <a href={portfolio.url} target="_blank" rel="noopener noreferrer" alt="project page" ><img src={portfolio.imgUrl} alt="battleship" /></a>
 
             </div>
         )
